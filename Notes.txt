@@ -1,0 +1,213 @@
+PYTHON LIBRARIES 
+
+1.data manipulation---numpy,pandas
+2.data visualisation---matplotlib,seacorn,plotly
+3.machine learning---scikit-learn,sk-learn
+4.deep learning---tensorflow,keras,pytorchcm
+
+----------------------------------
+
+id() = memory location of the witten var.
+# = comment 
+** = power
+
+# RULES OF VARIABLES
+1. cant start with number
+   eg. -- 1='python','a1='python'
+
+2. no space 
+   eg. -- a 1='python'
+
+3. can't use special character
+   eg. -- a$='hello'
+   But -- a_1='hi' ; _=200
+
+4. can't use keywords
+   eg. -- for =2.2
+
+----------------------------------
+
+# PYTHON OPERATOR (7 types)
+
+1. Arithmatic                          --   +,-,*,/,%,//,**
+2. Comparison/relational operator      --   >,<,>=,<=,!=,==            ==(checking equality)
+3. Assignment opr                      --   +,+=,-=,*=,/=,//=      
+4. Bitwise opr                         --   &,|,^
+5. Logical Opr                         --   and,or,not
+6. identity opr                        --   is,is not
+7. Membership opr                      --   in,not in 
+
+-------------------------------------
+
+()  --  Function,Expression,Tuple 
+[]  --  List,indexing,slicing
+{}  --  Set,Dictionary
+<>  --  NO use
+
+--------------------------------------
+
+# Data types in python
+
+1. Numeric --- int  ---- a=5
+               float ---- b=5.5
+               complex ---- =3+5j
+
+2. String --- str --- a='hello'/a="hello"/a='''hi'''
+                  but b="'hello'" (not possible)
+
+3. List --- list --- my_list = ['hello',5,5.3,2+4j]
+
+4. Tuple --- tuple --- my_tuple = (45,4.5,'hii','bye')
+
+5. Set --- set --- {1,23,56,50}
+
+6. Dictionary --- dict ---{ key : value }
+
+7. Boolean --- bool --- True,False
+
+---------------------------------------
+
+# Stirng
+
+1.indexing
+  a='hello'
+  he
+
+  +ve indexing = 0,1,2....
+  -ve indexing = -1,-2,-3.....
+
+2.slicing
+  a[starting point(by default 0)(including) : stop(excluding) : step size(b.d1)]
+  
+  Eg- b='hello world'            output- 
+      b[0:2]                             'he'
+
+      b[:10:2]                           'hlowr'
+
+      b[6:23234234]                      'world'
+
+      b[-1::-1]                          'dlrow olleh'
+
+a. ''' ''' = used for multi line string
+           Eg- c='''asfsgfdhf         output on print(c)- asfsgfdhf
+		        safdsgsfgsdf                          safdsgsfgsdf
+			  safsdgsdf'''                          safsdgsdf
+
+b. x[i] -- this will print the i th value of the given string
+        Eg- a='ashish'                     output- 'a'
+            a[0] 
+
+c. x.capitalize() -- capitalize first letter in a string
+                     Eg- a='hello world'             output- 'Hello world'
+                         a=a.capitalize()
+
+d.x.title() --  capitalize the first letters of each words in a string
+                Eg-
+
+# list
+
+1.[]                                                    list in list(do it)
+2.homo/hetro
+3.mutable
+4.indexing/slicing,loop
+
+
+# Tuple
+
+1.()
+2.common seperated value
+3.immutable
+4.homo/hetro
+5.Indexing/slicing
+
+# Set
+
+1.unordered
+2.indexing/slicing(no use)
+3.unique collection
+
+# Dictionary
+
+1.unordered
+2.key value pair
+3.indexing/slicing not possible
+
+---------------------------------------------------------------------
+
+# 3 Statements
+
+1.Condition/Decision Making -- if-elif-else(suites/indentation)
+2.Looping -- For and While
+3.Exception Handling ---- try,except
+
+----------------------------------------------------------------------
+
+# Simple if
+
+if age<18:
+	print('A gift')
+if age>=18 and age<=20:
+	print('A gift')
+	print('A task')
+if age>20:
+	print('koi gift nahi hai')
+
+
+#Ladder 
+
+if age<18:
+	print('a gift')
+elif age>=18 and age<=20:
+	print('a gift')
+	print('a task')
+else:
+	print('koi gift nahi hai')
+
+
+# Nested
+
+if today=='Saturday':
+	print('Half day work')
+elif today=='Sunday':
+	if condition=='sick':
+		print('Take Rest')
+	else:
+		print('party')
+
+* range(start point(including)(by default 0),stop point(excluding),step(by default 1))
+--------------------------------------------------------------------
+
+# LOOP:
+
+1.For Loop
+2.While Loop
+
+------
+for i in[1,2,3,4,5]:
+	print(i)
+---------------------------------------------------------------------
+
+# FUNCTION
+
+1.No i/o
+2.No i but o
+3.i but No o
+4.both i/o
+
+A.Taking Multiple input
+B.Returning Multiple output
+C.Keyword Argument
+D.Default Values
+E.*args
+F.**kwargs
+
+----------------------------------------------------------------------
+
+Module -- it is a .py file ; Eg - OS , Math
+Packages -- it is a collection of modules , _init_.py
+Libraries -- it is a collection of packages
+
+
+HW -  t=[2,5,8,6,10,16] multiply first 4 by 2 and keep remaining same
+     pypi
+

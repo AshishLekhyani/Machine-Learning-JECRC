@@ -1,0 +1,285 @@
+c='''asfsgfdhf
+safdsgsfgsdf
+safsdgsdf'''
+print(c)
+asfsgfdhf
+safdsgsfgsdf
+safsdgsdf
+
+a='ashish'
+a[0]
+'a'
+b='hello world'
+b[10]
+'d'
+b[-1]
+'d'
+b[0,1]
+Traceback (most recent call last):
+  File "<pyshell#9>", line 1, in <module>
+    b[0,1]
+TypeError: string indices must be integers
+b[0-1]
+'d'
+
+b[0:2]
+'he'
+'he'
+'he'
+b[3-5]
+'l'
+b[3:5]
+'lo'
+b[:2]
+'he'
+b[:10:2]
+'hlowr'
+b[:6:1]
+'hello '
+b[:6:11]
+'h'
+b[6:11]
+'world'
+b[6:]
+'world'
+b[6:23234234]
+'world'
+b[-5:]
+'world'
+b[11:0:-1]
+'dlrow olle'
+b[-1::-1]
+'dlrow olleh'
+b[-1:-12:-1]
+'dlrow olleh'
+b[-8:-6:1]
+'lo'
+a='hello world'
+a.capatalize()
+Traceback (most recent call last):
+  File "<pyshell#28>", line 1, in <module>
+    a.capatalize()
+AttributeError: 'str' object has no attribute 'capatalize'. Did you mean: 'capitalize'?
+a.capitalize()
+'Hello world'
+a=a.capitalize()
+
+a='hello world'
+a.title()
+'Hello World'
+a.centre(50)
+Traceback (most recent call last):
+  File "<pyshell#33>", line 1, in <module>
+    a.centre(50)
+AttributeError: 'str' object has no attribute 'centre'. Did you mean: 'center'?
+a.centre(50)
+Traceback (most recent call last):
+  File "<pyshell#34>", line 1, in <module>
+    a.centre(50)
+AttributeError: 'str' object has no attribute 'centre'. Did you mean: 'center'?
+a.center(50)
+'                   hello world                    '
+a.center(50,'#')
+'###################hello world####################'
+a.count('1')
+0
+a=a.center(50)
+a
+'                   hello world                    '
+a.lstrip()
+'hello world                    '
+a.rstrip()
+'                   hello world'
+a.strip()
+'hello world'
+a=a.strip()
+a
+'hello world'
+a.isupper()
+False
+a.islower()
+True
+a.upper()
+'HELLO WORLD'
+a.lower()
+'hello world'
+a.startswith('he')
+True
+a
+'hello world'
+a=a.upper()
+a.startswith('he')
+False
+a
+'HELLO WORLD'
+a.endswith('D')
+True
+len(a)
+11
+a[0]='M'
+Traceback (most recent call last):
+  File "<pyshell#56>", line 1, in <module>
+    a[0]='M'
+TypeError: 'str' object does not support item assignment
+del a[a]
+Traceback (most recent call last):
+  File "<pyshell#57>", line 1, in <module>
+    del a[a]
+TypeError: 'str' object does not support item deletion
+del a[0]
+Traceback (most recent call last):
+  File "<pyshell#58>", line 1, in <module>
+    del a[0]
+TypeError: 'str' object doesn't support item deletion
+b='akshat123@gmail.com'
+b.split('@')
+['akshat123', 'gmail.com']
+b
+'akshat123@gmail.com'
+b=b.split('@')
+b
+['akshat123', 'gmail.com']
+'@'.join(b)
+'akshat123@gmail.com'
+m=[12,'hi',2.3,500]
+m[0]
+12
+m[1:3]
+['hi', 2.3]
+'hi' in m
+True
+
+'hello' in m
+False
+'hi' not in m
+False
+2*m
+[12, 'hi', 2.3, 500, 12, 'hi', 2.3, 500]
+m +=['new value']
+m
+[12, 'hi', 2.3, 500, 'new value']
+m.append('abc')
+m
+[12, 'hi', 2.3, 500, 'new value', 'abc']
+m.append('x','y')
+Traceback (most recent call last):
+  File "<pyshell#77>", line 1, in <module>
+    m.append('x','y')
+TypeError: list.append() takes exactly one argument (2 given)
+m.extend(['x','y','kuch bhi'])
+m
+[12, 'hi', 2.3, 500, 'new value', 'abc', 'x', 'y', 'kuch bhi']
+m.insert(2,'hello')
+m
+[12, 'hi', 'hello', 2.3, 500, 'new value', 'abc', 'x', 'y', 'kuch bhi']
+m.pop()
+'kuch bhi'
+m
+[12, 'hi', 'hello', 2.3, 500, 'new value', 'abc', 'x', 'y']
+mp=m.pop()
+mp
+'y'
+m.pop(0)
+12
+m
+['hi', 'hello', 2.3, 500, 'new value', 'abc', 'x']
+m.clear()
+m
+[]
+n=[12,45,52,100]
+n.reverse()
+n
+[100, 52, 45, 12]
+n.sort()
+n
+[12, 45, 52, 100]
+max(n)
+100
+min(n)
+12
+m=[12, 'hi', 2.3, 500, 'new value']
+m.index('hi')
+1
+m[1][0]
+'h'
+t= 52,23,'abc'
+type(t)
+<class 'tuple'>
+len(t)
+3
+t.index('abc')
+2
+t[0]
+52
+t[:2]
+(52, 23)
+t[0]= 43
+Traceback (most recent call last):
+  File "<pyshell#106>", line 1, in <module>
+    t[0]= 43
+TypeError: 'tuple' object does not support item assignment
+del [t]
+del t[1]
+Traceback (most recent call last):
+  File "<pyshell#108>", line 1, in <module>
+    del t[1]
+NameError: name 't' is not defined
+t
+Traceback (most recent call last):
+  File "<pyshell#109>", line 1, in <module>
+    t
+NameError: name 't' is not defined
+t= 52,23,'abc'
+t
+(52, 23, 'abc')
+k=(12,52,85,(5,'abc',5.5),100)
+type(t)
+<class 'tuple'>
+type(k)
+<class 'tuple'>
+>>> k[3]
+(5, 'abc', 5.5)
+>>> k[3][1]
+'abc'
+>>> k[3][1][1]
+'b'
+>>> t
+(52, 23, 'abc')
+>>> s={1,1,2,2,3,4,4,3}
+>>> type(s)
+<class 'set'>
+>>> print(s)
+{1, 2, 3, 4}
+>>> s[0]
+Traceback (most recent call last):
+  File "<pyshell#122>", line 1, in <module>
+    s[0]
+TypeError: 'set' object is not subscriptable
+>>> s[0:2]
+Traceback (most recent call last):
+  File "<pyshell#123>", line 1, in <module>
+    s[0:2]
+TypeError: 'set' object is not subscriptable
+>>> s
+{1, 2, 3, 4}
+>>> s2={23,3,41,4}
+>>> s.intersection(s2)
+{3, 4}
+>>> s.union(s2)
+{1, 2, 3, 4, 41, 23}
+>>> s.add(100)
+>>> s
+{1, 2, 3, 100, 4}
+>>> s.discard(100)
+>>> s
+{1, 2, 3, 4}
+>>> s.remove(3)
+>>> s
+{1, 2, 4}
+>>> s1={44,33,22}
+>>> s.update(s1)
+>>> s
+{1, 2, 33, 4, 44, 22}
+>>> s.clear()
+>>> s
+set()
