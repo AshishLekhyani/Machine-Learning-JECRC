@@ -22,7 +22,7 @@ box.place(x=10,y=10)
 def get_movie():
     pass
 
-ttk.Button(app, text='Find Recommendation', font=('Arial',22), command = get_movie).palce(x=200,y=50)
+ttk.Button(app, text='Find Recommendation', font=('Arial',22), command = get_movie).place(x=200,y=50)
 ttk.Label(app, textvariable=result, font=('Arial',22)).place(x=200,y=100)
 
 app.mainloop()
