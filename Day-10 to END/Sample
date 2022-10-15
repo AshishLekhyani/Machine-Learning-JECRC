@@ -1,0 +1,14 @@
+from tkinter import *
+from PIL import Image,ImageTk
+
+win = Tk()
+win.geometry("750x270")
+
+Canvas=Canvas(win, width=600, height=400)
+Canvas.pack()
+
+img= ImageTk.PhotoImage(Image.open("4K-Abstract-Wallpaper-HD.png"))
+
+Canvas.create_image(10,10,anchor=NW,image=img)
+
+win.mainloop()
