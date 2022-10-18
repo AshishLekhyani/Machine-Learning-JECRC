@@ -1,0 +1,43 @@
+GIT Process
+-------------
+> Create new repository
+> Provide valid name
+> Select Public repo
+> Finish
+
+Goto your folder(training)
+type cmd in address bar then enter
+
+GIT COMMANDS.
+--------------
+git init .          # Initialize the GIT folder
+git add .           # Add all files/folders in git folder
+git config user.name "Your Name"
+git config user.email "youremail@id.com"
+git remote add origin "yourrepolink.git"
+
+git commit -m "anymessage"
+git push -u origin main 
+
+
+------------------------------------------------------
+
+https://github.com/sanampeeyush/jecrc_cs_sep22/tree/assignment1/assignments
+
+
+
+
+scikit-learn
+--------------------------
+Bring the data
+Preprocessing/Analysis
+
+Split Data (Training, Testing)
+from sklearn.model_selection import train_test_splitxtrain,xtest,ytrain,ytest = tarin_test_split(features,target,test_size=0.25,random_state = 101)
+
+Train the model
+from sklearn.linear_model import LinearRegression
+model = LinearRegression()
+model.fit(xtest, ytrain)
+
+Model Evalution
