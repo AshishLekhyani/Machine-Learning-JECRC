@@ -1,7 +1,5 @@
-from cgitb import reset
 import tkinter as ttk
 import pandas as pd
-
 model = pd.read_pickle('housePrice.pickle')
 
 app = ttk.Tk()
@@ -43,3 +41,10 @@ result.set('0')
 ttk.Label(app, textvariable=result, pady=15, font=('Arial',20), background='white').grid(row=5, column=0, columnspan=2)
 
 app.mainloop()
+
+
+#
+#       Use on CMD (exe/pkg)
+#       python -m pip install pyinstaller
+#
+#       pyinstaller --onefile -w day22_gui_house_price_startup_profit.py
